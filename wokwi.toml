@@ -1,0 +1,9 @@
+[wokwi]
+version = 1
+firmware = '.pio/build/esp32dev/firmware.bin'
+elf = '.pio/build/esp32dev/firmware.elf'
+
+# Forward the ESP32's web server to http://localhost:8180 (Wokwi for VS Code)
+[[net.forward]]
+from = "localhost:8180"
+to = "target:80"
